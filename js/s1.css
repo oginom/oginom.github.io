@@ -1,0 +1,29 @@
+
+body {
+  margin: 0;
+  background: #000;
+}
+h1 {
+  background: #CCFF99;
+}
+p {
+  background: #99CCFF;
+}
+div#bg {
+  z-index: 10;
+  /* background: #FFCC99; */
+  position: fixed !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+}
+div#main {
+  z-index: 50;
+  width: 100%;
+  margin-top: 50vh;
+  background: #FF99CC;
+  position: relative;
+  overflow: auto;
+}
