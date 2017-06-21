@@ -1,7 +1,7 @@
 $(function(){
   $('p').click(function(){
     //$(this).text('clicked');
-    $('p').css('background-color', '#ffff00');
+    $(this).css('background-color', '#ffff00');
   });
   $('#bg').vegas({
     slides:[
@@ -12,7 +12,14 @@ $(function(){
     ],
     timer:false,
     delay:8000,
-    overlay:false
+    overlay:true
+  });
+  $(".thumbnail").hover(function () {
+    $(this).children("video")[0].play();
+  }, function () {
+    var el = $(this).children("video")[0];
+    el.pause();
+    el.currentTime = 0;
   });
 });
 

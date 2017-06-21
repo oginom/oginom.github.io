@@ -27,3 +27,14 @@ div#main {
   position: relative;
   overflow: auto;
 }
+div.thumbnail {
+  width: 50vw;
+  margin: 10vw auto;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  background: #FC2;
+}
+video.mop {
+  width: 100%;
+}
