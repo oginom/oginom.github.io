@@ -1,0 +1,3 @@
+@function whiten($color, $weight) {
+  @return mix($color, #fff, 100% - $weight);
+}
